@@ -87,3 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# movie conversation
+movie_lines.txt
+dialog.txt
