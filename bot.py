@@ -34,7 +34,7 @@ while user_input:
                for line, good in dialog]
     selected_index = weighted_random_index(weights)
     response, _ = dialog[selected_index + 1]
-    score = editdistance.eval(user_input, response.lower())
+    score = editdistance.eval(user_input, dialog[selected_index][0].lower())
     print 'bot response: ', response
     print '( score: ', score, ')'
     print '__________________________'
